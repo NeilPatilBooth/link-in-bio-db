@@ -1,0 +1,11 @@
+<!-- app/views/item_templates/list.html.erb -->
+
+<h1>Hello, world!</h1>
+
+<% @list_of_items.each do |the_item| %>
+  <div>
+    <a href="<%= the_item.link_url %>">
+      <%= the_item.link_description %>
+    </a>
+  </div>
+<% end %>
